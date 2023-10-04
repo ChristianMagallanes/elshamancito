@@ -19,7 +19,7 @@
     @include celu{
       padding-bottom: 0;
       
-      width: 300px;
+      width: auto;
     }
     .btn-donar{
       color: #000000;
@@ -33,6 +33,9 @@
       line-height: normal;
       letter-spacing: 5px;
       border-radius: 9px;
+      @include celu{
+        font-size: 14px;
+      }
     }
     @include desktop2{
       width: 600px;
@@ -43,8 +46,8 @@
       height: 300px;
     }
     @include celu{
-      width: 400px;
-      height: 250px;
+      width: 300px;
+      
     }
    
     .cards-zx9-img {
@@ -53,6 +56,9 @@
      align-items: center;
       @include tablet {
         height: auto;
+      }
+      @include celu{
+        height: 100px;
       }
     }
     .cards-zx9-data {
@@ -87,6 +93,9 @@
         @include desktop2{
           font-size: 24px;
         }
+        @include celu{
+          margin-bottom: 0;
+        }
       }
       .cards-zx9-parrafo {
         margin-bottom: 50px;
@@ -98,6 +107,9 @@
         line-height: 25px;
         @include tablet {
           font-size: 14px;
+        }
+        @include celu{
+          margin-bottom: 15px;
         }
       }
       
@@ -111,7 +123,7 @@
     transform-style: preserve-3d; /* Establece el estilo de transformación */
     animation: rotateAnimation 20s linear infinite; /* Aplica la animación */
     @include celu{
-      height: 200px;
+      height: 100px;
     }
 }
 

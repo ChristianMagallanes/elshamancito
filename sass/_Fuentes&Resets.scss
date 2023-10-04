@@ -8,6 +8,10 @@ body{
   background: linear-gradient(300deg,#000000,#292829);
   background-size: 120% 120%;
   animation: gradient-animation 12s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 @keyframes gradient-animation {
     0% {
@@ -20,4 +24,19 @@ body{
       background-position: 0% 50%;
     }
   }
- 
+ .qr-descarga{
+  margin-top: 20px;
+  width: auto;
+  height: auto;
+  text-align: center;
+  font-family: Poppins;
+  
+  .qr-titulo{
+    color: aliceblue;
+    
+  }
+  .qr-span{
+    color: red;
+    font-size: 14px;
+  }
+ }

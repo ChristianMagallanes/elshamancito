@@ -53,6 +53,10 @@
             width: 400px;
             height: auto;
         }
+        @include celu{
+            width: 300px;
+            height: auto;
+        }
         .new-product-tittle{
             padding-bottom: 20px;
             font-size: 18px;

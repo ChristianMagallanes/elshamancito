@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  
+  width: 100%;
   
     .btn-container{
         
@@ -16,6 +16,7 @@
           flex-wrap: wrap;
           align-items: center;
           justify-content: center;
+          width: 100%;
         }
         
     }
@@ -25,7 +26,7 @@
         margin-top: 100px;
         text-align: center;
         gap: 30px;
-     
+        width: 100%;
     }
   }
 
