@@ -2,7 +2,8 @@
     justify-content: center;
     padding-bottom: 100px;
     padding-top: 10px;
-    gap: 100px;
+    gap: 50px;
+    height: 50vh;
     display: flex;
    @include celu {
     flex-wrap: wrap;
