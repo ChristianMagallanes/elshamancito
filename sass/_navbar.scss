@@ -11,7 +11,7 @@
     position: sticky;
     top: 0;
     z-index: 1;
-    background-color: #000000;
+    background: #ffffff;
     @include desktop1{
       width: 800px;
     }
@@ -19,7 +19,12 @@
       width: 80%;
       height: auto;
       transition: 1s;
-      padding: 0;
+      
+    }
+    @include celu {
+      height: auto;
+      border-radius: 0px 0px 20px 20px;
+      margin-bottom: 2px;
     }
    
   }
@@ -36,13 +41,14 @@
   .btn-container {
     display: flex;
     gap: 34px;
+    
   }
   
   .nav-btn {
     cursor: pointer;
     background: none;
     border: hidden;
-    color: #FFF;
+    color: #000000;
     font-family: "Manrope";
     font-size: 13px;
     font-style: normal;
@@ -51,7 +57,7 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     text-decoration: none;
-    background: #000;
+    background: #ffffff;
     padding: 5px;
     border-radius: 5px;
     &:hover{
@@ -63,7 +69,7 @@
       cursor: pointer;
     background: none;
     border: hidden;
-    color: #FFF;
+    color: #000000;
     font-family: "Manrope";
     font-size: 13px;
     font-style: normal;
@@ -72,7 +78,7 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     text-decoration: none;
-    background: #000;
+    background: #ffffff;
     padding: 5px;
     border-radius: 5px;
     }
@@ -85,14 +91,21 @@
     justify-content: center;
     gap: 30px;
     text-align: center;
-    
+    background: #ffffff;
+    border-radius: 8px;
+   width: 100%;
+   
   }
   .navbar-collapse{
    
     
-  margin-bottom: 5px;
+ 
    
     transition: 1s;
-    color: #fff;
+    color: #000000;
   }
- 
+ .navbar-toggler-icon{
+  @include celu{
+    font-size: 10px;
+  }
+ }

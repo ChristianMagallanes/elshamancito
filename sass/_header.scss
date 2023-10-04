@@ -12,13 +12,15 @@
         gap: 10px;
     }
     @include celu{
-        gap: 0px;
+        gap: 10px;
+        height: auto;
+        margin-top: 12%;
     }
     #animation-container{
         height: 400px;
         perspective: 1000px; /* Establece la perspectiva */
         @include celu{
-            height: 300px;
+            height: 150px;
         }
         .tw{
             border-radius: 50%;
