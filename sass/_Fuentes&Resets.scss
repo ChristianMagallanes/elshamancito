@@ -5,9 +5,9 @@
     text-decoration: none;
 }
 body{
-    background: linear-gradient(300deg,#ffffff,#eddbdb,#ffffff);
-    background-size: 180% 180%;
-    animation: gradient-animation 18s ease infinite;
+  background: linear-gradient(300deg,#000000,#292829);
+  background-size: 120% 120%;
+  animation: gradient-animation 12s ease infinite;
 }
 @keyframes gradient-animation {
     0% {

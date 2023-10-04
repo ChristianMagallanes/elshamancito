@@ -42,7 +42,7 @@
         width: 398px;
         height: 346px;
         flex-shrink: 0;
-        color: #000000;
+        color: #ffffff;
         @include desktop1{
             text-align: center;
             flex-wrap: wrap;
@@ -112,7 +112,8 @@
             letter-spacing: 1px;
             text-transform: uppercase;
             &:hover{
-                background-color: #a306ce;
+                background-color: #000000;
+                border: solid 1px red;
             }
         }
     }

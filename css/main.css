@@ -7,10 +7,10 @@
 }
 
 body {
-  background: linear-gradient(300deg, #ffffff, #eddbdb, #ffffff);
-  background-size: 180% 180%;
-  -webkit-animation: gradient-animation 18s ease infinite;
-          animation: gradient-animation 18s ease infinite;
+  background: linear-gradient(300deg, #000000, #292829);
+  background-size: 120% 120%;
+  -webkit-animation: gradient-animation 12s ease infinite;
+          animation: gradient-animation 12s ease infinite;
 }
 
 @-webkit-keyframes gradient-animation {
@@ -106,7 +106,7 @@ body {
 .btn {
   color: #fff;
   font-size: 20px;
-  background-color: red;
+  border: solid red 1px;
 }
 
 .navbar-nav {
@@ -210,7 +210,7 @@ body {
   height: 346px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  color: #000000;
+  color: #ffffff;
 }
 @media screen and (max-width: 1206px) {
   .header .new-product-container {
@@ -288,7 +288,8 @@ body {
   text-transform: uppercase;
 }
 .header .new-product-container .new-product-btn:hover {
-  background-color: #a306ce;
+  background-color: #000000;
+  border: solid 1px red;
 }
 
 @-webkit-keyframes rotateAnimation {
@@ -364,7 +365,7 @@ body {
   top: -90px;
 }
 .producto .producto-titulo {
-  color: #000;
+  color: #ffffff;
   text-align: center;
   font-family: monospace;
   font-size: 24px;
@@ -379,7 +380,7 @@ body {
   cursor: pointer;
   background: none;
   border: hidden;
-  color: #000000;
+  color: #ffffff;
   font-family: monospace;
   font-size: 24px;
   font-style: normal;
@@ -388,6 +389,9 @@ body {
   letter-spacing: 1px;
   text-transform: uppercase;
   padding: 20px;
+}
+.producto .boton-seguir:hover {
+  border-bottom: solid 1px #fff;
 }
 
 .cards-grandes-container {
@@ -413,7 +417,7 @@ body {
   display: flex;
   width: 800px;
   padding: 20px;
-  background: #353ffd;
+  background: #9e9e9f;
   border-radius: 8px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
