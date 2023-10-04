@@ -2,13 +2,17 @@
     display: flex;
     justify-content: space-between; /* Para separar el logo de los botones */
     align-items: center;
-    width: 1110px;
+    width: 1210px;
+    padding: 15px;
+    border-radius: 0px 0px 50px 50px;
     height: 80px;
-    border-bottom: solid #fff 1px;
+    
     margin: 0 auto; /* Centrar horizontalmente el navbar si es necesario */
     position: sticky;
     top: 0;
-    @include desktop2{
+    z-index: 1;
+    background-color: #000000;
+    @include desktop1{
       width: 800px;
     }
   }
@@ -39,8 +43,17 @@
     line-height: 25px;
     letter-spacing: 2px;
     text-transform: uppercase;
+    text-decoration: none;
     &:hover{
-      color: #df61f5;
+      color: hwb(0 0% 0%);
+    }
+  }
+  .carrito-container{
+    width: 150px;
+    .btn{
+      color: #fff;
+      font-size: 20px;
+      background-color: red;
     }
   }
   

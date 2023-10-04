@@ -10,7 +10,7 @@
   </head>
   <body>
   
-    <nav class="navbar">
+    <nav  class="navbar">
       <div class="logo-container">
        <img class="logo" src="./assets/assets/logo.png" alt="">
       </div>
@@ -20,16 +20,42 @@
         <button class="nav-btn" onclick="inicio()">inicio</button>
         <button class="nav-btn" id="donaciones" onclick="design()">donaciones</button>
 
-        <button class="nav-btn" id="botonNavegacion" onclick="about()">sobre mi</button>
-        <button class="nav-btn">descargar cv</button>
+        <button class="nav-btn" id="redes" onclick="social()">redes sociales</button>
+        <a class="nav-btn" href="https://discord.com/invite/SgZ8WR8AGr" target="_blank">unete a discord!</a>
+        
+        
       </div>
       <div class="carrito-container">
-        
+        <!-- Button trigger modal -->
+<button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Chat!
+</button>
+
+
       </div>
     </nav>
       
       <!--Header-->
     <header id="header" class="header">
+
+      <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Chat</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe src="https://xat.com/embed/chat.php#id=220523559&gn=elShamanCito" width="650" height="486" frameborder="0" scrolling="no"></iframe><br><small>  </small>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+       
+      </div>
+    </div>
+  </div>
+</div>
       <!--Navbar-->
       
       <div data-aos="fade-down-right" class="new-product-container">
@@ -37,15 +63,15 @@
           <h4 class="new-product-tittle">elShamanCito</h4>
         </div>
         <div>
-          <h2 class="new-product-name">elShamanCito</h2>
+          <h2 class="new-product-name">acerca de mi</h2>
         </div>
         <div>
           <p class="new-product-p">
-            Soy una diseñadora gráfica apasionada por la creatividad y la estética, transformando ideas en visuales impactantes y memorables.
+            ►Padre de familia y con 2 críos, viejo sabroso tirando un poco de magia por los games! Me vas a conocer con el tiempo pero jugamos casi todos los días para reírnos no importa si sos manko o altro crack acá se viene a divertirse!
           </p>
         </div>
         <div>
-          <a class="new-product-btn" href="">Ver mi stream</a>
+          <a class="new-product-btn" href="https://www.twitch.tv/elshamancito/" target="_blank">Ver mi stream</a>
         </div>
       </div>
 
@@ -61,108 +87,59 @@
 
 
     
-    <section id="donacioness" class="cards-grandes-container">
+    <section data-aos="fade-up" id="donacioness" class="cards-grandes-container">
       <div class="zx9">
         <div class="cards-zx9-img">
-
+          <img class="pay-logo" src="./assets/assets/py.png" alt="">
         </div>
-        <div data-aos="fade-down-left"  class="cards-zx9-data">
+        <div   class="cards-zx9-data">
           
          <div class="data-container">
-          <h2 class="cards-zx9-title">Pack strem 03</h2>
+          <h2 class="cards-zx9-title">donaciones</h2>
           
 
-          <p class="cards-zx9-parrafo">Incluye:
-            Logo
-            Banner
-            Comenzando animado
-            Escena para IRL
-            Offline
-            Paneles x6
-            Transición simple</p>
+          <p class="cards-zx9-parrafo">TODO SUMA PARA LA MIGRACION FAMILIAR A ESPAÑITA Y SE AGRADECE!!! </p>
 
-            <button id="openModalButton">Abrir Modal</button>
+            <a class="btn-donar" href="https://streamelements.com/elshamancito/tip" target="_blank">donar</a>
 
          </div>
           
         </div>
 
       </div>
-      <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <iframe src="https://streamelements.com/elshamancito/tip" frameborder="0"></iframe>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
+    
     </section>
     <!--Prodcutos Principales -->
-    <h1>mis redes sociales</h1>
-    <section id="diseños" class="productosPrincipales">
+  
+    <section id="redess" class="productosPrincipales">
       
-      <div class="producto">
+      <div data-aos="fade-up" class="producto">
         <img src="./assets/assets/ig.svg" alt="" class="producto-imagen">
-        <p class="producto-titulo">logo1</p>
-        <a class="boton-agregar-carrito" href="">comprar</a>
+        <a class="boton-seguir" href="https://www.instagram.com/elshamancito/">sigueme</a>
       </div>
-      <div class="producto">
-        <img src="" alt="" class="producto-imagen">
-        <p class="producto-titulo">logo2</p>
-        <a class="boton-agregar-carrito" href="">comprar</a>
-      </div>
-      <div class="producto">
-        <img src="" alt="" class="producto-imagen">
-        <p class="producto-titulo">logo3</p>
-        <a class="boton-agregar-carrito" href="">comprar</a>
+      <div data-aos="fade-up" class="producto">
+        <img src="./assets/assets/tik.webp" alt="" class="producto-imagen">
+        <a class="boton-seguir" href="https://www.tiktok.com/@elshamancito">sigueme</a>
       </div>
     </section>
     <footer class="footer">
       
-      <div class="footer-data">
-        <div class="logo-container">
-          <img class="logo" src="./assets/assets/logoalka.png" alt="">
-         </div>
-      <div class="p-container">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptatum fugit consectetur labore? Ducimus delectus obcaecati esse reprehenderit ex quibusdam omnis distinctio eligendi earum, quos molestias voluptas beatae repellendus officiis.</p>
-      </div>
-
-      <p class="copy">Copyright 2023..</p>
-
-      </div>
+      
+  
        <!----->
 
-       <div class="footer-links">
+       
         <div class="btn-container">
-          <button class="nav-btn">inicio</button>
-          <button class="nav-btn" id="botonNavegacion" onclick="design()">diseños</button>
-
-          <button class="nav-btn" id="botonNavegacion" onclick="about()">sobre mi</button>
-          <button class="nav-btn">descargar cv</button>
-        </div>
-          <div class="redes">
-            <img class="icon" src="./assets/shared/desktop/icon-facebook.svg" alt="">
-            <img class="icon" src="./assets/shared/desktop/icon-twitter.svg" alt="">
-            <img class="icon" src="./assets/shared/desktop/icon-instagram.svg" alt="">
+          <button class="nav-btn" onclick="inicio()">inicio</button>
+          <button class="nav-btn" id="donaciones" onclick="design()">donaciones</button>
+  
+          <button class="nav-btn" id="redes" onclick="social()">redes sociales</button>
+          <a class="nav-btn" href="https://discord.com/invite/SgZ8WR8AGr" target="_blank">unete a discord!</a>
         </div>
         
+        
        
-       </div>
+       
       
     </footer>
    
