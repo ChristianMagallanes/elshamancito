@@ -15,3 +15,8 @@
         @content;
     }
 }
+@mixin celu {
+    @media screen and (max-width:542px) {
+        @content;
+    }
+}

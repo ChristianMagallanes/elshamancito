@@ -4,7 +4,9 @@
     padding-top: 10px;
     gap: 100px;
     display: flex;
-   
+   @include celu {
+    flex-wrap: wrap;
+   }
 }
 .producto{
     display: flex;
@@ -12,12 +14,13 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
-   
     height: 250px;
     border-radius: 8px;
     width: 304px;
     height: 276;
-    
+    @include celu{
+        height: 200px;
+    }
     
     .producto-imagen{
       height: 100%;

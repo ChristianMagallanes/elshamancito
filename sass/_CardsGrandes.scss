@@ -13,7 +13,14 @@
     background: #353ffd;
     border-radius: 8px;
     justify-content: space-around;
-    
+    @include tablet {
+      width: 400px;
+    }
+    @include celu{
+      padding-bottom: 0;
+      
+      width: 300px;
+    }
     .btn-donar{
       color: #000000;
       text-decoration: none;
@@ -31,11 +38,22 @@
       width: 600px;
       
     }
+    @include tablet{
+      width: 500px;
+      height: 300px;
+    }
+    @include celu{
+      width: 400px;
+      height: 250px;
+    }
+   
     .cards-zx9-img {
      display: flex;
      justify-content: center;
      align-items: center;
-      
+      @include tablet {
+        height: auto;
+      }
     }
     .cards-zx9-data {
       display: flex;
@@ -48,6 +66,13 @@
         width: 349px;
         height: 303px;
         flex-shrink: 0;
+        @include desktop2{
+          width: auto;
+          height: auto;
+        }
+        @include celu{
+          width: 200px;
+        }
       }
       .cards-zx9-title {
         margin-bottom: 50px;
@@ -59,6 +84,9 @@
         line-height: 58px;
         letter-spacing: 2px;
         text-transform: uppercase;
+        @include desktop2{
+          font-size: 24px;
+        }
       }
       .cards-zx9-parrafo {
         margin-bottom: 50px;
@@ -68,7 +96,9 @@
         font-style: normal;
         font-weight: 500;
         line-height: 25px;
-        
+        @include tablet {
+          font-size: 14px;
+        }
       }
       
       }
@@ -80,6 +110,9 @@
     border-radius: 50%;
     transform-style: preserve-3d; /* Establece el estilo de transformación */
     animation: rotateAnimation 20s linear infinite; /* Aplica la animación */
+    @include celu{
+      height: 200px;
+    }
 }
 
 

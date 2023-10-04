@@ -15,6 +15,11 @@
     @include desktop1{
       width: 800px;
     }
+    @include tablet{
+      width: 80%;
+      height: auto;
+    }
+   
   }
   
   .logo-container {
@@ -48,12 +53,29 @@
       color: hwb(0 0% 0%);
     }
   }
-  .carrito-container{
-    width: 150px;
+  
     .btn{
       color: #fff;
       font-size: 20px;
       background-color: red;
     }
-  }
   
+
+  .navbar-nav{
+    gap: 30px;
+    text-align: center;
+    align-items: center;
+  }
+  .navbar-collapse{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 15px;
+    border-radius: 0px 0px 50px 50px;
+    margin: 0 ; /* Centrar horizontalmente el navbar si es necesario */
+    position: sticky;
+    top: 0;
+    background-color: #000000;
+    color: #fff;
+  }
+ 

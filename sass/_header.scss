@@ -8,9 +8,18 @@
         flex-wrap: wrap-reverse;
         gap: 20px;
     }
+    @include tablet {
+        gap: 10px;
+    }
+    @include celu{
+        gap: 0px;
+    }
     #animation-container{
         height: 400px;
         perspective: 1000px; /* Establece la perspectiva */
+        @include celu{
+            height: 300px;
+        }
         .tw{
             border-radius: 50%;
             height: 100%;
@@ -40,6 +49,10 @@
             width: 600px;
             margin-left: 0;
         }
+        @include tablet {
+            width: 400px;
+            height: auto;
+        }
         .new-product-tittle{
             padding-bottom: 20px;
             font-size: 18px;
@@ -62,6 +75,9 @@
             line-height: 58px;
             letter-spacing: 2px;
             text-transform: uppercase;
+            @include tablet{
+                font-size: 38px;
+            }
         }
         .new-product-p{
             width: 37  9px;
@@ -73,6 +89,9 @@
             font-weight: 500;
             line-height: 25px;
             opacity: 0.75;
+            @include tablet {
+                font-size: 18px;
+            }
         }
         .new-product-btn{
             cursor: pointer;

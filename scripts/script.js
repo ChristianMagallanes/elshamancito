@@ -12,3 +12,14 @@ function social() {
   let seccion = document.getElementById("redess");
   seccion.scrollIntoView({ behavior: "smooth" })
 }
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const hamburger = document.getElementById('hamburger');
+  const navbar = document.querySelector('.navbar');
+
+  hamburger.addEventListener('click', function () {
+    navbar.classList.toggle('active');
+  });
+});
+
