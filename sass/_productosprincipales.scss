@@ -9,6 +9,8 @@
    @include celu {
     flex-wrap: wrap;
     height: auto;
+    padding-top: 0;
+    padding-bottom: 0;
    }
 }
 .producto{
@@ -22,7 +24,7 @@
     width: 304px;
     height: 276;
     @include celu{
-        height: 200px;
+        height: 150px;
     }
     
     .producto-imagen{

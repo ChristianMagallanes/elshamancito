@@ -392,6 +392,8 @@ body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     height: auto;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -417,7 +419,7 @@ body {
 }
 @media screen and (max-width: 542px) {
   .producto {
-    height: 200px;
+    height: 150px;
   }
 }
 .producto .producto-imagen {
