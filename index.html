@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+  
+    <nav class="navbar">
+      <div class="logo-container">
+       <img class="logo" src="./assets/assets/logo.png" alt="">
+      </div>
+     
+
+      <div class="btn-container">
+        <button class="nav-btn" onclick="inicio()">inicio</button>
+        <button class="nav-btn" id="donaciones" onclick="design()">donaciones</button>
+
+        <button class="nav-btn" id="botonNavegacion" onclick="about()">sobre mi</button>
+        <button class="nav-btn">descargar cv</button>
+      </div>
+      <div class="carrito-container">
+        
+      </div>
+    </nav>
+      
+      <!--Header-->
+    <header id="header" class="header">
+      <!--Navbar-->
+      
+      <div data-aos="fade-down-right" class="new-product-container">
+        <div>
+          <h4 class="new-product-tittle">elShamanCito</h4>
+        </div>
+        <div>
+          <h2 class="new-product-name">elShamanCito</h2>
+        </div>
+        <div>
+          <p class="new-product-p">
+            Soy una diseñadora gráfica apasionada por la creatividad y la estética, transformando ideas en visuales impactantes y memorables.
+          </p>
+        </div>
+        <div>
+          <a class="new-product-btn" href="">Ver mi stream</a>
+        </div>
+      </div>
+
+
+      <div data-aos="fade-up"  id="animation-container">
+        <img class="tw" src="./assets/assets/as.jpg" alt="" loop="false">
+      </div>
+
+
+    </header>
+
+    
+
+
+    
+    <section id="donacioness" class="cards-grandes-container">
+      <div class="zx9">
+        <div class="cards-zx9-img">
+
+        </div>
+        <div data-aos="fade-down-left"  class="cards-zx9-data">
+          
+         <div class="data-container">
+          <h2 class="cards-zx9-title">Pack strem 03</h2>
+          
+
+          <p class="cards-zx9-parrafo">Incluye:
+            Logo
+            Banner
+            Comenzando animado
+            Escena para IRL
+            Offline
+            Paneles x6
+            Transición simple</p>
+
+            <button id="openModalButton">Abrir Modal</button>
+
+         </div>
+          
+        </div>
+
+      </div>
+      <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe src="https://streamelements.com/elshamancito/tip" frameborder="0"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    </section>
+    <!--Prodcutos Principales -->
+    <h1>mis redes sociales</h1>
+    <section id="diseños" class="productosPrincipales">
+      
+      <div class="producto">
+        <img src="./assets/assets/ig.svg" alt="" class="producto-imagen">
+        <p class="producto-titulo">logo1</p>
+        <a class="boton-agregar-carrito" href="">comprar</a>
+      </div>
+      <div class="producto">
+        <img src="" alt="" class="producto-imagen">
+        <p class="producto-titulo">logo2</p>
+        <a class="boton-agregar-carrito" href="">comprar</a>
+      </div>
+      <div class="producto">
+        <img src="" alt="" class="producto-imagen">
+        <p class="producto-titulo">logo3</p>
+        <a class="boton-agregar-carrito" href="">comprar</a>
+      </div>
+    </section>
+    <footer class="footer">
+      
+      <div class="footer-data">
+        <div class="logo-container">
+          <img class="logo" src="./assets/assets/logoalka.png" alt="">
+         </div>
+      <div class="p-container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptatum fugit consectetur labore? Ducimus delectus obcaecati esse reprehenderit ex quibusdam omnis distinctio eligendi earum, quos molestias voluptas beatae repellendus officiis.</p>
+      </div>
+
+      <p class="copy">Copyright 2023..</p>
+
+      </div>
+       <!----->
+
+       <div class="footer-links">
+        <div class="btn-container">
+          <button class="nav-btn">inicio</button>
+          <button class="nav-btn" id="botonNavegacion" onclick="design()">diseños</button>
+
+          <button class="nav-btn" id="botonNavegacion" onclick="about()">sobre mi</button>
+          <button class="nav-btn">descargar cv</button>
+        </div>
+          <div class="redes">
+            <img class="icon" src="./assets/shared/desktop/icon-facebook.svg" alt="">
+            <img class="icon" src="./assets/shared/desktop/icon-twitter.svg" alt="">
+            <img class="icon" src="./assets/shared/desktop/icon-instagram.svg" alt="">
+        </div>
+        
+       
+       </div>
+      
+    </footer>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./scripts/script.js"></script>
+  </body>
+  
+</html>
