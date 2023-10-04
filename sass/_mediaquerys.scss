@@ -6,17 +6,17 @@
 
 @mixin desktop2 {
     @media screen and (max-width:1000px) {
-        @content
+        @content;
     }
 }
 
 @mixin tablet {
-    @media screen and (max-width:800px) {
+    @media screen and (max-width:720px) {
         @content;
     }
 }
 @mixin celu {
-    @media screen and (max-width:542px) {
+    @media screen and (max-width:500px) {
         @content;
     }
 }

@@ -1,0 +1,18 @@
+.qr-descarga{
+    margin-top: 20px;
+    width: 500px;
+    height: auto;
+    text-align: center;
+    font-family: Poppins;
+    @include celu{
+      width: 400px;
+    }
+    .qr-titulo{
+      color: aliceblue;
+      
+    }
+    .qr-span{
+      color: red;
+      font-size: 14px;
+    }
+   }

@@ -2,64 +2,33 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   gap: 200px;
-    height: 100vh; 
-    @include desktop1{
-        flex-wrap: wrap-reverse;
-        gap: 20px;
-    }
-    @include tablet {
-        gap: 10px;
-    }
-    @include celu{
-        gap: 10px;
-        height: auto;
-        margin-top: 12%;
-    }
-    #animation-container{
-        height: 400px;
-        perspective: 1000px; /* Establece la perspectiva */
-        @include celu{
-            height: 150px;
-        }
-        .tw{
-            border-radius: 50%;
-            height: 100%;
-            transform-style: preserve-3d; /* Establece el estilo de transformación */
-            animation: rotateAnimation 20s linear infinite; /* Aplica la animación */
-        }
-    }
-    @include desktop1{
-        background-size: 120%;
-    }
-    @include desktop2{
-        background-size: 150%;
-    }
-    .new-product-container{
-      
+   flex-direction: column;
+   width: 100%;
+    height: 500px; 
+   
+   
+    
+   
+  
+
+    /*         sobre mi      */ 
+    .sobre-mi-container{
         display: flex;
         justify-content: center;
         flex-direction: column;
-        margin-left: 200px;
-        width: 398px;
-        height: 346px;
+        align-items: center;
+        width: 700px;
         flex-shrink: 0;
         color: #ffffff;
-        @include desktop1{
-            text-align: center;
-            flex-wrap: wrap;
-            width: 600px;
-            margin-left: 0;
-        }
-        @include tablet {
-            width: 400px;
-            height: auto;
+        @include tablet{
+            width: 500px;
         }
         @include celu{
-            width: 300px;
-            height: auto;
+            width: 400px;
         }
-        .new-product-tittle{
+      
+
+        .sobre-mi-subtitulo{
             padding-bottom: 20px;
             font-size: 18px;
             font-family: 'Manrope';
@@ -68,11 +37,11 @@
             line-height: normal;
             letter-spacing: 10px;
             text-transform: uppercase;
-            color: #ff0000;
-            
-            
+            text-align: center;
+            color: #ff0000;     
         }
-        .new-product-name{
+
+        .sobre-mi-titulo{
             padding-bottom: 20px;
             font-size: 56px;
             font-family: 'Manrope', sans-serif;
@@ -81,13 +50,12 @@
             line-height: 58px;
             letter-spacing: 2px;
             text-transform: uppercase;
-            @include tablet{
-                font-size: 38px;
-            }
-        }
-        .new-product-p{
-            width: 37  9px;
+            text-align: center;
             
+        }
+
+        .sobre-mi-parrafo{
+            width: 37  9px;
             padding-bottom: 20px;
             font-family: "Manrope";
             font-style: normal;
@@ -95,15 +63,13 @@
             font-weight: 500;
             line-height: 25px;
             opacity: 0.75;
-            @include tablet {
-                font-size: 18px;
-            }
+            text-align: center;
+           
         }
-        .new-product-btn{
+
+        .ver-twitch-btn{
             cursor: pointer;
             background-color: #ff0000;
-            
-            width: 160px;
             text-decoration: none;
             flex-shrink: 0;
             border: hidden;
@@ -124,14 +90,60 @@
         }
     }
 }
+/*         ------------------      */       
 
+/*         logo animado    */
 
-
-@keyframes rotateAnimation {
-    0% {
-        transform: rotate3d(0, 1, 0, 0deg); /* Rotación inicial en el eje Y */
-    }
-    100% {
-        transform: rotate3d(0, 1, 0, 360deg); /* Rotación final en el eje Y (360 grados) */
+     
+        
+#animation-container {
+    perspective: 1000px; /* Agrega perspectiva para la rotación 3D */
+    display: inline-block; /* Permite que el contenedor se ajuste al tamaño de la imagen */
+    position: relative; /* Permite posicionar el fuego dentro del contenedor */
+    overflow: hidden; /* Oculta cualquier sombra fuera del contenedor */
+  }
+  
+  .img-animada {
+    height: 300px;
+    animation: rotateAnimation 4s linear infinite alternate; /* Aplica la animación de rotación */
+    transform-origin: center;margin: 30px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.7); /* Agrega una sombra roja para simular el fuego */
+    border-radius: 50%; /* Asegura que la sombra se vea alrededor de todo el borde circular */
+    position: relative; /* Permite posicionar la sombra en relación con la imagen */
+    @include celu{
+        height: 200px;
     }
 }
+  
+  @keyframes rotateAnimation {
+    0% {
+      transform: rotate3d(1, 1, 0, 0deg); /* Inicio de la animación con rotación a 0 grados */
+    }
+    100% {
+      transform: rotate3d(1, 1, 0, 360deg); /* Final de la animación con rotación a 360 grados */
+    }
+  }
+  
+  /* Animación del borde como fuego */
+  @keyframes fireAnimation {
+    0% {
+      box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.9);
+    }
+    100% {
+      box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+    }
+  }
+  
+  .img-animada::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: fireAnimation 25s infinite; /* Aplica la animación de fuego al borde */
+  }
+  

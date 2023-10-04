@@ -49,21 +49,6 @@ body {
     background-position: 0% 50%;
   }
 }
-.qr-descarga {
-  margin-top: 20px;
-  width: auto;
-  height: auto;
-  text-align: center;
-  font-family: Poppins;
-}
-.qr-descarga .qr-titulo {
-  color: aliceblue;
-}
-.qr-descarga .qr-span {
-  color: red;
-  font-size: 14px;
-}
-
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -87,7 +72,7 @@ body {
     width: 800px;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 720px) {
   .navbar {
     width: 80%;
     height: auto;
@@ -95,7 +80,7 @@ body {
     transition: 1s;
   }
 }
-@media screen and (max-width: 542px) {
+@media screen and (max-width: 500px) {
   .navbar {
     height: auto;
     border-radius: 0px 0px 20px 20px;
@@ -183,7 +168,7 @@ body {
   color: #000000;
 }
 
-@media screen and (max-width: 542px) {
+@media screen and (max-width: 500px) {
   .navbar-toggler-icon {
     font-size: 10px;
   }
@@ -199,57 +184,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 200px;
-  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 500px;
+  /*         sobre mi      */
 }
-@media screen and (max-width: 1206px) {
-  .header {
-    -ms-flex-wrap: wrap-reverse;
-        flex-wrap: wrap-reverse;
-    gap: 20px;
-  }
-}
-@media screen and (max-width: 800px) {
-  .header {
-    gap: 10px;
-  }
-}
-@media screen and (max-width: 542px) {
-  .header {
-    gap: 10px;
-    height: auto;
-    margin-top: 12%;
-  }
-}
-.header #animation-container {
-  height: 400px;
-  -webkit-perspective: 1000px;
-          perspective: 1000px; /* Establece la perspectiva */
-}
-@media screen and (max-width: 542px) {
-  .header #animation-container {
-    height: 150px;
-  }
-}
-.header #animation-container .tw {
-  border-radius: 50%;
-  height: 100%;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d; /* Establece el estilo de transformación */
-  -webkit-animation: rotateAnimation 20s linear infinite;
-          animation: rotateAnimation 20s linear infinite; /* Aplica la animación */
-}
-@media screen and (max-width: 1206px) {
-  .header {
-    background-size: 120%;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .header {
-    background-size: 150%;
-  }
-}
-.header .new-product-container {
+.header .sobre-mi-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -260,35 +203,25 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 200px;
-  width: 398px;
-  height: 346px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 700px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   color: #ffffff;
 }
-@media screen and (max-width: 1206px) {
-  .header .new-product-container {
-    text-align: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 600px;
-    margin-left: 0;
+@media screen and (max-width: 720px) {
+  .header .sobre-mi-container {
+    width: 500px;
   }
 }
-@media screen and (max-width: 800px) {
-  .header .new-product-container {
+@media screen and (max-width: 500px) {
+  .header .sobre-mi-container {
     width: 400px;
-    height: auto;
   }
 }
-@media screen and (max-width: 542px) {
-  .header .new-product-container {
-    width: 300px;
-    height: auto;
-  }
-}
-.header .new-product-container .new-product-tittle {
+.header .sobre-mi-container .sobre-mi-subtitulo {
   padding-bottom: 20px;
   font-size: 18px;
   font-family: "Manrope";
@@ -297,9 +230,10 @@ body {
   line-height: normal;
   letter-spacing: 10px;
   text-transform: uppercase;
+  text-align: center;
   color: #ff0000;
 }
-.header .new-product-container .new-product-name {
+.header .sobre-mi-container .sobre-mi-titulo {
   padding-bottom: 20px;
   font-size: 56px;
   font-family: "Manrope", sans-serif;
@@ -308,13 +242,9 @@ body {
   line-height: 58px;
   letter-spacing: 2px;
   text-transform: uppercase;
+  text-align: center;
 }
-@media screen and (max-width: 800px) {
-  .header .new-product-container .new-product-name {
-    font-size: 38px;
-  }
-}
-.header .new-product-container .new-product-p {
+.header .sobre-mi-container .sobre-mi-parrafo {
   width: 37 9px;
   padding-bottom: 20px;
   font-family: "Manrope";
@@ -323,16 +253,11 @@ body {
   font-weight: 500;
   line-height: 25px;
   opacity: 0.75;
+  text-align: center;
 }
-@media screen and (max-width: 800px) {
-  .header .new-product-container .new-product-p {
-    font-size: 18px;
-  }
-}
-.header .new-product-container .new-product-btn {
+.header .sobre-mi-container .ver-twitch-btn {
   cursor: pointer;
   background-color: #ff0000;
-  width: 160px;
   text-decoration: none;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -348,32 +273,120 @@ body {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-.header .new-product-container .new-product-btn:hover {
+.header .sobre-mi-container .ver-twitch-btn:hover {
   background-color: #000000;
   border: solid 1px red;
 }
 
+/*         ------------------      */
+/*         logo animado    */
+#animation-container {
+  -webkit-perspective: 1000px;
+          perspective: 1000px; /* Agrega perspectiva para la rotación 3D */
+  display: inline-block; /* Permite que el contenedor se ajuste al tamaño de la imagen */
+  position: relative; /* Permite posicionar el fuego dentro del contenedor */
+  overflow: hidden; /* Oculta cualquier sombra fuera del contenedor */
+}
+
+.img-animada {
+  height: 300px;
+  -webkit-animation: rotateAnimation 4s linear infinite alternate;
+          animation: rotateAnimation 4s linear infinite alternate; /* Aplica la animación de rotación */
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  margin: 30px;
+  -webkit-box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+          box-shadow: 0 0 10px rgba(255, 0, 0, 0.7); /* Agrega una sombra roja para simular el fuego */
+  border-radius: 50%; /* Asegura que la sombra se vea alrededor de todo el borde circular */
+  position: relative; /* Permite posicionar la sombra en relación con la imagen */
+}
+@media screen and (max-width: 500px) {
+  .img-animada {
+    height: 200px;
+  }
+}
+
 @-webkit-keyframes rotateAnimation {
   0% {
-    -webkit-transform: rotate3d(0, 1, 0, 0deg);
-            transform: rotate3d(0, 1, 0, 0deg); /* Rotación inicial en el eje Y */
+    -webkit-transform: rotate3d(1, 1, 0, 0deg);
+            transform: rotate3d(1, 1, 0, 0deg); /* Inicio de la animación con rotación a 0 grados */
   }
   100% {
-    -webkit-transform: rotate3d(0, 1, 0, 360deg);
-            transform: rotate3d(0, 1, 0, 360deg); /* Rotación final en el eje Y (360 grados) */
+    -webkit-transform: rotate3d(1, 1, 0, 360deg);
+            transform: rotate3d(1, 1, 0, 360deg); /* Final de la animación con rotación a 360 grados */
   }
 }
 
 @keyframes rotateAnimation {
   0% {
-    -webkit-transform: rotate3d(0, 1, 0, 0deg);
-            transform: rotate3d(0, 1, 0, 0deg); /* Rotación inicial en el eje Y */
+    -webkit-transform: rotate3d(1, 1, 0, 0deg);
+            transform: rotate3d(1, 1, 0, 0deg); /* Inicio de la animación con rotación a 0 grados */
   }
   100% {
-    -webkit-transform: rotate3d(0, 1, 0, 360deg);
-            transform: rotate3d(0, 1, 0, 360deg); /* Rotación final en el eje Y (360 grados) */
+    -webkit-transform: rotate3d(1, 1, 0, 360deg);
+            transform: rotate3d(1, 1, 0, 360deg); /* Final de la animación con rotación a 360 grados */
   }
 }
+/* Animación del borde como fuego */
+@-webkit-keyframes fireAnimation {
+  0% {
+    -webkit-box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+  }
+  50% {
+    -webkit-box-shadow: 0 0 20px rgba(255, 0, 0, 0.9);
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.9);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+  }
+}
+@keyframes fireAnimation {
+  0% {
+    -webkit-box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+  }
+  50% {
+    -webkit-box-shadow: 0 0 20px rgba(255, 0, 0, 0.9);
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.9);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+  }
+}
+.img-animada::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: fireAnimation 25s infinite;
+          animation: fireAnimation 25s infinite; /* Aplica la animación de fuego al borde */
+}
+
+.qr-descarga {
+  margin-top: 20px;
+  width: 500px;
+  height: auto;
+  text-align: center;
+  font-family: Poppins;
+}
+@media screen and (max-width: 500px) {
+  .qr-descarga {
+    width: 400px;
+  }
+}
+.qr-descarga .qr-titulo {
+  color: aliceblue;
+}
+.qr-descarga .qr-span {
+  color: red;
+  font-size: 14px;
+}
+
 .productosPrincipales {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -387,7 +400,7 @@ body {
   display: flex;
   width: 100%;
 }
-@media screen and (max-width: 542px) {
+@media screen and (max-width: 500px) {
   .productosPrincipales {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -417,7 +430,7 @@ body {
   width: 304px;
   height: 276;
 }
-@media screen and (max-width: 542px) {
+@media screen and (max-width: 500px) {
   .producto {
     height: 150px;
   }
@@ -474,7 +487,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding-bottom: 20px;
-  height: 100vh;
+  height: 500px;
 }
 .cards-grandes-container .zx9 {
   display: -webkit-box;
@@ -487,12 +500,12 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 720px) {
   .cards-grandes-container .zx9 {
     width: 400px;
   }
 }
-@media screen and (max-width: 542px) {
+@media screen and (max-width: 500px) {
   .cards-grandes-container .zx9 {
     padding-bottom: 0;
     width: auto;
@@ -511,7 +524,7 @@ body {
   letter-spacing: 5px;
   border-radius: 9px;
 }
-@media screen and (max-width: 542px) {
+@media screen and (max-width: 500px) {
   .cards-grandes-container .zx9 .btn-donar {
     font-size: 14px;
   }
@@ -521,13 +534,13 @@ body {
     width: 600px;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 720px) {
   .cards-grandes-container .zx9 {
     width: 500px;
     height: 300px;
   }
 }
-@media screen and (max-width: 542px) {
+@media screen and (max-width: 500px) {
   .cards-grandes-container .zx9 {
     width: 300px;
   }
@@ -543,12 +556,12 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 720px) {
   .cards-grandes-container .zx9 .cards-zx9-img {
     height: auto;
   }
 }
-@media screen and (max-width: 542px) {
+@media screen and (max-width: 500px) {
   .cards-grandes-container .zx9 .cards-zx9-img {
     height: 100px;
   }
@@ -581,7 +594,7 @@ body {
     height: auto;
   }
 }
-@media screen and (max-width: 542px) {
+@media screen and (max-width: 500px) {
   .cards-grandes-container .zx9 .cards-zx9-data .data-container {
     width: 200px;
   }
@@ -602,7 +615,7 @@ body {
     font-size: 24px;
   }
 }
-@media screen and (max-width: 542px) {
+@media screen and (max-width: 500px) {
   .cards-grandes-container .zx9 .cards-zx9-data .cards-zx9-title {
     margin-bottom: 0;
   }
@@ -616,12 +629,12 @@ body {
   font-weight: 500;
   line-height: 25px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 720px) {
   .cards-grandes-container .zx9 .cards-zx9-data .cards-zx9-parrafo {
     font-size: 14px;
   }
 }
-@media screen and (max-width: 542px) {
+@media screen and (max-width: 500px) {
   .cards-grandes-container .zx9 .cards-zx9-data .cards-zx9-parrafo {
     margin-bottom: 15px;
   }
@@ -635,7 +648,7 @@ body {
   -webkit-animation: rotateAnimation 20s linear infinite;
           animation: rotateAnimation 20s linear infinite; /* Aplica la animación */
 }
-@media screen and (max-width: 542px) {
+@media screen and (max-width: 500px) {
   .pay-logo {
     height: 100px;
   }
@@ -666,22 +679,18 @@ body {
   text-align: center;
   width: 100%;
 }
-@media screen and (max-width: 1206px) {
-  .footer .btn-container {
-    margin-left: 0;
+@media screen and (max-width: 500px) {
+  .footer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: auto;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
   .footer .btn-container {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 100%;
+    height: auto;
   }
 }
 .footer .redes {
@@ -695,4 +704,11 @@ body {
   text-align: center;
   gap: 30px;
   width: 100%;
+}
+@media screen and (max-width: 500px) {
+  .footer .redes {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: auto;
+  }
 }
