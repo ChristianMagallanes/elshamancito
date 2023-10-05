@@ -1,5 +1,5 @@
 function design() {
-  let seccion = document.getElementById("donacioness");
+  let seccion = document.getElementById("donacionesss");
   seccion.scrollIntoView({ behavior: "smooth" });
 }
 
