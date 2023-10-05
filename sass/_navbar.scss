@@ -2,33 +2,15 @@
     display: flex;
     justify-content: space-between; /* Para separar el logo de los botones */
     align-items: center;
-    width: 1210px;
-    
+    width: 100%;
     border-radius: 0px 0px 50px 50px;
     height: 80px;
-    
-    
     position: sticky;
     top: 0;
     z-index: 1;
     background: #ffffff;
-    @include desktop1{
-      width: 800px;
     }
-    @include tablet{
-      width: 80%;
-      height: auto;
-      transition: 1s;
-      
-    }
-    @include celu {
-      height: auto;
-      border-radius: 0px 0px 20px 20px;
-      margin-bottom: 2px;
-    }
-   
-  }
-  
+    
   .logo-container {
     flex-shrink: 0; /* Evitar que el logo se reduzca */
     height: 45px;
@@ -37,13 +19,10 @@
       border-radius: 50%;
     }
   }
-  
   .btn-container {
     display: flex;
     gap: 34px;
-    
   }
-  
   .nav-btn {
     cursor: pointer;
     background: none;
@@ -64,9 +43,8 @@
       color: hwb(0 0% 0%);
     }
   }
-  
     .btn{
-      cursor: pointer;
+    cursor: pointer;
     background: none;
     border: hidden;
     color: #000000;
@@ -82,10 +60,7 @@
     padding: 5px;
     border-radius: 5px;
     }
-  
-
   .navbar-nav{
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,19 +68,9 @@
     text-align: center;
     background: #ffffff;
     border-radius: 8px;
-   width: 100%;
-   
+   width: 100%; 
   }
   .navbar-collapse{
-   
-    
- 
-   
     transition: 1s;
     color: #000000;
   }
- .navbar-toggler-icon{
-  @include celu{
-    font-size: 10px;
-  }
- }

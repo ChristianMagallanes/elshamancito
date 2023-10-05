@@ -59,33 +59,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 1210px;
+  width: 100%;
   border-radius: 0px 0px 50px 50px;
   height: 80px;
   position: sticky;
   top: 0;
   z-index: 1;
   background: #ffffff;
-}
-@media screen and (max-width: 1206px) {
-  .navbar {
-    width: 800px;
-  }
-}
-@media screen and (max-width: 720px) {
-  .navbar {
-    width: 80%;
-    height: auto;
-    -webkit-transition: 1s;
-    transition: 1s;
-  }
-}
-@media screen and (max-width: 500px) {
-  .navbar {
-    height: auto;
-    border-radius: 0px 0px 20px 20px;
-    margin-bottom: 2px;
-  }
 }
 
 .logo-container {
@@ -145,7 +125,6 @@ body {
 }
 
 .navbar-nav {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -166,12 +145,6 @@ body {
   -webkit-transition: 1s;
   transition: 1s;
   color: #000000;
-}
-
-@media screen and (max-width: 500px) {
-  .navbar-toggler-icon {
-    font-size: 10px;
-  }
 }
 
 .header {
@@ -387,92 +360,23 @@ body {
   font-size: 14px;
 }
 
-.productosPrincipales {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-bottom: 100px;
-  padding-top: 10px;
-  gap: 50px;
-  height: 50vh;
+.donar-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 400px;
   width: 100%;
 }
-@media screen and (max-width: 500px) {
-  .productosPrincipales {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    height: auto;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-}
-
-.producto {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-  height: 250px;
-  border-radius: 8px;
-  width: 304px;
-  height: 276;
-}
-@media screen and (max-width: 500px) {
-  .producto {
-    height: 150px;
-  }
-}
-.producto .producto-imagen {
-  height: 100%;
-}
-.producto .producto-detalles {
-  position: relative;
-  top: -90px;
-}
-.producto .producto-titulo {
-  color: #ffffff;
-  text-align: center;
-  font-family: monospace;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-.producto .boton-seguir {
-  text-decoration: none;
-  cursor: pointer;
-  background: none;
-  border: hidden;
-  color: #ffffff;
-  font-family: monospace;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  padding: 20px;
-}
-.producto .boton-seguir:hover {
-  border-bottom: solid 1px #fff;
-}
-
-.cards-grandes-container {
+.donar-container .card-donar {
+  background-image: url(../assets/assets/donarr.png);
+  background-position: center;
+  background-size: auto 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -480,190 +384,34 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 20px;
-  height: 500px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  height: 80%;
+  width: 700px;
 }
-.cards-grandes-container .zx9 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 800px;
-  padding: 20px;
-  background: #9e9e9f;
+.donar-container .card-donar h1 {
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.469);
+  width: 50%;
   border-radius: 8px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
-@media screen and (max-width: 720px) {
-  .cards-grandes-container .zx9 {
-    width: 400px;
-  }
-}
-@media screen and (max-width: 500px) {
-  .cards-grandes-container .zx9 {
-    padding-bottom: 0;
-    width: auto;
-  }
-}
-.cards-grandes-container .zx9 .btn-donar {
-  color: #000000;
+.donar-container .card-donar a {
   text-decoration: none;
+  color: #fff;
   font-size: 28px;
-  background-color: #ffffff;
-  padding: 10px;
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 5px;
-  border-radius: 9px;
-}
-@media screen and (max-width: 500px) {
-  .cards-grandes-container .zx9 .btn-donar {
-    font-size: 14px;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .cards-grandes-container .zx9 {
-    width: 600px;
-  }
-}
-@media screen and (max-width: 720px) {
-  .cards-grandes-container .zx9 {
-    width: 500px;
-    height: 300px;
-  }
-}
-@media screen and (max-width: 500px) {
-  .cards-grandes-container .zx9 {
-    width: 300px;
-  }
-}
-.cards-grandes-container .zx9 .cards-zx9-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-@media screen and (max-width: 720px) {
-  .cards-grandes-container .zx9 .cards-zx9-img {
-    height: auto;
-  }
-}
-@media screen and (max-width: 500px) {
-  .cards-grandes-container .zx9 .cards-zx9-img {
-    height: 100px;
-  }
-}
-.cards-grandes-container .zx9 .cards-zx9-data {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.cards-grandes-container .zx9 .cards-zx9-data .data-container {
+  padding: 5px;
+  width: 150px;
   text-align: center;
-  width: 349px;
-  height: 303px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-}
-@media screen and (max-width: 1000px) {
-  .cards-grandes-container .zx9 .cards-zx9-data .data-container {
-    width: auto;
-    height: auto;
-  }
-}
-@media screen and (max-width: 500px) {
-  .cards-grandes-container .zx9 .cards-zx9-data .data-container {
-    width: 200px;
-  }
-}
-.cards-grandes-container .zx9 .cards-zx9-data .cards-zx9-title {
-  margin-bottom: 50px;
-  color: #ffffff;
-  font-family: "Manrope";
-  font-size: 56px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 58px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-@media screen and (max-width: 1000px) {
-  .cards-grandes-container .zx9 .cards-zx9-data .cards-zx9-title {
-    font-size: 24px;
-  }
-}
-@media screen and (max-width: 500px) {
-  .cards-grandes-container .zx9 .cards-zx9-data .cards-zx9-title {
-    margin-bottom: 0;
-  }
-}
-.cards-grandes-container .zx9 .cards-zx9-data .cards-zx9-parrafo {
-  margin-bottom: 50px;
-  color: #ffffff;
-  font-family: "Manrope";
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 25px;
-}
-@media screen and (max-width: 720px) {
-  .cards-grandes-container .zx9 .cards-zx9-data .cards-zx9-parrafo {
-    font-size: 14px;
-  }
-}
-@media screen and (max-width: 500px) {
-  .cards-grandes-container .zx9 .cards-zx9-data .cards-zx9-parrafo {
-    margin-bottom: 15px;
-  }
+  border-radius: 15px;
+  background-color: rgb(50, 50, 240);
 }
 
-.pay-logo {
-  height: 300px;
-  border-radius: 50%;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d; /* Establece el estilo de transformación */
-  -webkit-animation: rotateAnimation 20s linear infinite;
-          animation: rotateAnimation 20s linear infinite; /* Aplica la animación */
-}
-@media screen and (max-width: 500px) {
-  .pay-logo {
-    height: 100px;
-  }
-}
-
-@keyframes rotateAnimation {
-  0% {
-    -webkit-transform: rotate3d(0, 1, 0, 0deg);
-            transform: rotate3d(0, 1, 0, 0deg); /* Rotación inicial en el eje Y */
-  }
-  100% {
-    -webkit-transform: rotate3d(0, 1, 0, 360deg);
-            transform: rotate3d(0, 1, 0, 360deg); /* Rotación final en el eje Y (360 grados) */
-  }
-}
 .footer {
   background: #101010;
   height: 225px;

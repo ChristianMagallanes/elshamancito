@@ -1,0 +1,9 @@
+.donar-container {
+  height: 500px;
+  width: 100%;
+}
+.donar-container .card-donar {
+  background-color: #fff;
+  height: 100%;
+  width: 400px;
+}
